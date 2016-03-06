@@ -8,12 +8,10 @@
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
                 {{ range .Paginator.Pages }}
-                <h1 class="content-subhead">{{ .Date.Format "02 Jan 2006, 15:04" }}</h1>
+                {{ if in .Params.tags "original" }}
                 <section class="post">
                     <header class="post-header">
-
                         <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
-
                         <p class="post-meta">
                             {{ with .Params.author }}
                                 By <strong class="post-author">{{ . }}</strong>
@@ -27,13 +25,26 @@
                     </header>
 
                     <div class="post-description">
-                        {{ .Content }}
+                        {{ .Summary }}
                     </div>
                 </section>
                 {{ end }}
+                {{ end }}
             </div>
+            <h2>Others</h2>
+            <div class="posts">
+                {{ range .Paginator.Pages }}
+                {{ if in .Params.tags "client" }}
+                <section class="post">
+                    <header class="post-header client-work">
+                        <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+                    </header>
+                </section>
+                {{ end }}
+                {{ end }}
             {{ partial "pagination.html" . }}
             {{ partial "footer.html" . }}
+            </div>
         </div>
     </div>
 </div>
