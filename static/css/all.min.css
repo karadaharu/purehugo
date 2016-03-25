@@ -11,21 +11,25 @@
 }
 .sidebar li.nav-li{
  display: inline-block;
+ font-size:0.9em;
 }
 .header{
   margin-top:25px;
 }
 .content-subhead{text-transform:uppercase}
 .footer,.header,.post-share-links{text-align:center}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.pure-g [class*=pure-u],button,html,input,select,textarea{font-family:"Source Sans Pro",serif}
-.brand-title,.nav-item a,.post-title, .content h2{
+
+.brand-title{
+  font-family:'Roboto Condensed',sans-serif;
+  font-weight:400;
+}
+.nav-item a,.post-title, .content h2{
   font-family:'Roboto',sans-serif;
   font-weight:300;
-}
-.content h2{
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .content h3{
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight:300;
 }
 a{text-decoration:none;color:#000000;position:relative;}.brand-title a,.sidebar{color:#000}
@@ -44,7 +48,7 @@ margin:0;
 }
 .brand-tagline{font-weight:300;color:#b0cadb}.nav-list{margin:0;list-style:none}
 .nav-item{
-  padding:0 11px;
+  padding:0 8px;
 }
 .nav-item a{background:0 0;margin-top:1em;font-weight:300;position:relative;}
 
@@ -74,6 +78,7 @@ a:focus::after,a:hover::after{
 .post-avatar{border-radius:50px;float:right;margin-left:1em}
 .post-description{
   font-family:"Roboto",sans-serif;color:#333;line-height:1.35em;font-weight:300;
+  font-size:14px;
 }
 .post-meta{color:#999;font-size:90%;margin:5px 0}.post-category{margin:0 .1em;padding:.3em 1em;color:#fff;background:#999;font-size:80%}.post-category-design{background:#5aba59}.post-category-pure{background:#4d85d1}.post-category-yui{background:#8156a7}.post-category-javascript{background:#df2d4f}.post-images{margin:1em 0}.post-image-meta{margin-top:-3.5em;margin-left:1em;color:#fff;text-shadow:0 1px 1px #333}.footer{padding:1em 0;color:#555;font-size:80%}.footer ul li a{display:inline;padding:0}.hugo{color:#333}.footer .pure-menu a:focus,.footer .pure-menu a:hover{background:0 0}.footer li{list-style-type:none}.post-share-links{margin:15px 15px 0 0;float:left;padding:10px}.post-share-links a{color:#aaa;font-size:28px;line-height:36px;margin:0 auto;display:block;transition:all .3s ease-in}.post-share-links a:hover{color:#000000}.post-share-links h4{font-family:"Roboto",sans-serif;margin:0 0 5px;color:#aaa}
 
