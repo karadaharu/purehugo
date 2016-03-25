@@ -1,13 +1,7 @@
 #layout,.nav-list{padding:0}
-.brand-title{
-}
 .top-bar{
   margin:20px 0 0 0;
   text-align:center;
-}
-.top-bar h1 {
-  font-size:1.2em;
-  -letter-kern: 3px 3px 3px 3px 3px 3px 3px 3px 3px 3px 3px 3px 3px 3px 3px;
 }
 .posts img{
   width:100%
@@ -15,28 +9,42 @@
 .client-work a{
   font-size:1em;
 }
-.sidebar li{
+.sidebar li.nav-li{
  display: inline-block;
+}
+.header{
+  margin-top:25px;
 }
 .content-subhead{text-transform:uppercase}
 .footer,.header,.post-share-links{text-align:center}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.pure-g [class*=pure-u],button,html,input,select,textarea{font-family:"Source Sans Pro",serif}
-.brand-title,.nav-item a,.post-title, .posts h2{
+.brand-title,.nav-item a,.post-title, .content h2{
   font-family:'Roboto',sans-serif;
   font-weight:300;
 }
-.posts h2{
+.content h2{
   font-size: 1.2em;
 }
-.posts h3{
+.content h3{
   font-size: 1.1em;
   font-weight:300;
 }
 a{text-decoration:none;color:#000000;position:relative;}.brand-title a,.sidebar{color:#000}
 .brand-title a:hover,.post-share-links a:hover,.post-title:hover{text-decoration:none}
 .pure-img-responsive{max-width:100%;height:auto}.
-header{top:auto;margin:3em auto}.brand-tagline,.brand-title{margin:0}.brand-tagline{font-weight:300;color:#b0cadb}.nav-list{margin:0;list-style:none}
+header{
+  top:auto;margin:3em auto;
+}
+.brand-tagline,.brand-title{
+margin:0;
+}
+.brand-title{
+  padding-bottom:15px;
+  font-size:1.2em;
+  letter-spacing:1px;
+}
+.brand-tagline{font-weight:300;color:#b0cadb}.nav-list{margin:0;list-style:none}
 .nav-item{
-  padding:0 18px;
+  padding:0 11px;
 }
 .nav-item a{background:0 0;margin-top:1em;font-weight:300;position:relative;}
 
@@ -78,9 +86,19 @@ a:focus::after,a:hover::after{
  display: list-item;
 }
 .content{padding:1em 19em 3em 0;}
-.header{margin:5% 9.8em 0;text-align:left}
+.header{
+  margin:5% 9.8em 0;
+  text-align:left;
+  white-space:nowrap;
+}
 .nav-item{
   padding:3px;zoom:1
+}
+.sidebar li.nav-li{
+ display: block;
+}
+.posts{
+  margin:47px 0 0 0;
 }
 }
 pre{word-wrap:break-word;padding:6px 10px;line-height:19px;margin-bottom:20px}code{border:1px solid #eaeaea;margin:0 2px;padding:0 5px;font-size:12px}pre code{border:0;padding:0;margin:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0}code,pre{font-family:Consolas,'Liberation Mono',Courier,monospace;color:#333;background:#f8f8f8;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}pre,pre code{font-size:13px}pre .comment{color:#998}pre .support{color:#0086B3}pre .tag,pre .tag-name{color:navy}pre .css-property,pre .css-value,pre .support.namespace,pre .vendor-prefix{color:#333}pre .constant.numeric,pre .hex-color,pre .keyword.unit{font-weight:400;color:#099}pre .entity.class{color:#458}pre .entity.function,pre .entity.id{color:#900}pre .attribute,pre .variable{color:teal}pre .string,pre .support.value{font-weight:400;color:#d14}pre .regexp{color:#009926}
