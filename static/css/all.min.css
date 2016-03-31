@@ -25,6 +25,9 @@ a:hover{
   font-weight:300;
   font-size: 1.2rem;
 }
+.post-header{
+  padding-bottom:10px;
+}
 .post-title{
   font-family:'Roboto','hiragino kaku gothic pro', meiryo, sans-serif;
   font-weight:300;

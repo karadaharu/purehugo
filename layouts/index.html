@@ -7,7 +7,6 @@
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
                 {{ range .Paginator.Pages }}
-                {{ if in .Params.tags "original" }}
                 <section class="post">
                     <header class="post-header">
 
@@ -29,7 +28,6 @@
                         {{ .Content }}
                     </div>
                 </section>
-                {{ end }}
                 {{ end }}
             </div>
             {{ partial "pagination.html" . }}
