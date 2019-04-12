@@ -6,7 +6,7 @@
         <div>
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
-                {{ range .Paginator.Pages }}
+                {{ range .Paginator.Pages.ByDate }}
                 {{ if ne .Section "others" }}
                 <section class="post">
                     <header class="post-header">
