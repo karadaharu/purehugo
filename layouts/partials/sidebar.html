@@ -6,27 +6,18 @@
                 <h1 class="brand-title">
                   <a href="{{ .Site.BaseURL }}">
                     {{ .Site.Title }}
+                  </a> <br/>
+                  <a href="{{ .Site.BaseURL }}" class="brand-title-ja">
+                    {{ .Site.Params.nameJa }}
                   </a>
                 </h1>
               </li>
-                <li class="nav-item nav-li">
-                    <a href="{{ .Site.BaseURL }}bio">bio</a>
-                </li>
-                <li class="nav-item nav-li">
-                    <a href="{{ .Site.BaseURL }}publications">publications</a>
-                <li class="nav-item nav-li">
-                    <a href="{{ .Site.BaseURL }}contact">contact</a>
-                </li>
-                {{ with .Site.Params.twitterName }}
-                <li class="nav-item">
-                    <a class="pure-button" href="https://twitter.com/{{ . }}"><i class="fa fa-twitter"></i> Twitter</a>
-                </li>
-                {{ end }}
-                {{ with .Site.Params.githubName }}
-                <li class="nav-item">
-                    <a class="pure-button" href="https://github.com/{{ . }} "><i class="fa fa-github-alt"></i> github</a>
-                </li>
-                {{ end }}
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            <li class="nav-item nav-li">
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{end}}
             </ul>
         </nav>
     </div>

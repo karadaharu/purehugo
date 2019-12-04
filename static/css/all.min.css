@@ -1,7 +1,6 @@
 /******* font ************/
 html {
   font-size: 62.5%; /*root size*/
-  font-family:'Roboto','Source Sans Pro','hiragino kaku gothic pro', meiryo, sans-serif;
   font-weight:300;
 }
 
@@ -12,40 +11,62 @@ a:hover{
 .post-description a{
   text-decoration:underline;
 }
+.profile-icon{
+  max-width:100px;
+  height:auto;
+  border-radius: 50%;
+}
 
 .brand-title{
-  font-family:'Roboto Condensed',sans-serif;
+  font-family:'Roboto Condensed',"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",  'Source Sans Pro','hiragino kaku gothic pro', meiryo, sans-serif;
   font-weight:400;
   font-size:2.0rem;
   letter-spacing:0.1rem; /*文字間の隙間*/
+}
+.brand-title-ja {
+  font-family:'Roboto Condensed',"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",  'Source Sans Pro','hiragino kaku gothic pro', meiryo, sans-serif;
+  font-weight:500;
+  font-size:1.9rem;
+  letter-spacing:0.2rem; /*文字間の隙間*/
 }
 .brand-title a:hover{
   color:#000000;
 }
 .nav-item{
-  font-family:'Roboto','hiragino kaku gothic pro', meiryo, sans-serif;
   font-weight:300;
   font-size: 1.3rem;
+}
+.posts {
+  font-family:'Roboto', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", 'Source Sans Pro','hiragino kaku gothic pro', meiryo, sans-serif;
 }
 .post-header{
   padding-bottom:10px;
 }
 .post-title{
-  font-family:'Roboto','hiragino kaku gothic pro', meiryo, sans-serif;
   font-weight:400;
   font-size: 1.5rem;
 }
-.post h2,.post h1{
-  font-family:'Roboto','hiragino kaku gothic pro', meiryo, sans-serif;
+.post h1{
+  /* text-align:center; */
+  /* padding-top:20px; */
+  font-weight:400;
+  font-size: 1.9rem;
+  margin-top: 60px;
+}
+#bio {
+  margin-top: 0px;
+}
+.post h2{
+  /* text-align:center; */
   font-weight:400;
   font-size: 1.4rem;
+  text-decoration:underline;
 }
 .post h3, .post h4{
   font-weight:300;
   font-size: 1.2rem;
 }
 .post-description{
-  font-family:'Roboto','hiragino kaku gothic pro', meiryo, sans-serif;
   font-weight:300;
   line-height:2.0rem; /*行間の隙間*/
   font-size:1.3rem;
@@ -115,6 +136,14 @@ pre,pre code{font-size:13px}pre .comment{color:#998}pre .support{color:#0086B3}p
 .profile-pic {
   margin:0;
   padding:0;
+  margin-right:20px;
+  max-width:130px;
+  height:auto;
+  float: left;
+}
+.profile-text{
+  display:inline-block;
+  width:100%;
 }
 /******PC表示用*******/
 @media (min-width:48em){
@@ -129,18 +158,20 @@ pre,pre code{font-size:13px}pre .comment{color:#998}pre .support{color:#0086B3}p
   }
   .nav-li{
    display: block;
+   /* text-align:center; */
   }
   .content{
     padding:110px 0 0 0;
     max-width:800px;
   }
   .profile-pic img{
-    width:50%;
-    float: right;
-    margin-left:20pt;
+    max-width:130px;
+    height:auto;
+    float: left;
+    margin-right:20px;
+    border-radius: 50%;
   }
-  .profile-text{
-    display:inline-block;
+  .nav-icon{
+    padding-top:0;
   }
-}
 
